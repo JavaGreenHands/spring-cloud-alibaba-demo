@@ -1,0 +1,17 @@
+server:
+  port: 7070
+
+spring:
+  application:
+    name: configserver
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+    config:
+      server:
+        git:
+          uri: https://github.com/JavaGreenHands/cloud-config.git
+          search-paths: /
+          password: mima2017...
+          username: 1277081149@qq.com
